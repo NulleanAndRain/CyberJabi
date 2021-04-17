@@ -1,0 +1,20 @@
+.loadScreenCell{
+	width: 80%;
+	align-items: flex-start;
+	align-content: flex-start;
+	display: flex;
+}
+.loadScreenMainText{
+	font-family: Verdana;
+	text-align: left;
+	padding: 1em;
+	font-size: 36px;
+}
+.loadScreenBottomText{
+	font-family: Verdana;
+	text-align: left;
+	margin-top: -1em;
+	padding: 0.5em;
+	color: #444;
+	font-size: 1.5em;
+}
