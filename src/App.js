@@ -10,6 +10,7 @@ import Persik from './panels/Persik';
 import Role from './panels/Role';
 import LoadScreen from './panels/LoadScreen'
 import StudentProfile from './panels/StudentProfile'
+import ParentProfile from "./panels/ParentProfile";
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('role');
@@ -44,6 +45,7 @@ const App = () => {
 					<Persik id='persik' go={go} />
 					<Role id='role' go={go} />
 					<StudentProfile id='studentProfile' go={go} fetchedUser={fetchedUser} />
+					<ParentProfile id='parentProfile' go={go} fetchedUser={fetchedUser} />
 				</View>
 			</AppRoot>
 		</AdaptivityProvider>
