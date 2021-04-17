@@ -91,3 +91,22 @@
 	font-size: 9px;
 	margin-top: 10px;
 }
+.checkFrog {
+	display: flex;
+	flex-direction: column;
+	height: 22px;
+	width: 12px;
+	z-index: 1000;
+	position: relative;
+	right: 5px;
+	bottom: 12px;
+}
+#checkFrog1{
+	left: 21px;
+}
+#checkFrog2{
+	left: 91px;
+}
+#checkFrog3{
+	left: 133px;
+}

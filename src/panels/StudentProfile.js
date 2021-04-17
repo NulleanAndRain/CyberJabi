@@ -19,6 +19,8 @@ import course1 from '../img/image2.png';
 import course2 from '../img/image3.png';
 import course3 from '../img/3dsMax.png';
 import roadmap from '../img/roadmap.png';
+import miniFrog1 from '../img/checkFrog3.png';
+import miniFrog2 from '../img/checkFrog4.png';
 
 const StudentProfile = props => (
 	<Panel id={props.id}>
@@ -46,11 +48,15 @@ const StudentProfile = props => (
 						Курс по CSS
 					</Div>
 					<div className='progressWrapper' id="progress1">
-						<div className='courseProgressBack'>
+						{/*<div className='courseProgressBack'>
 							<div className='courseProgressBack'></div>
+						</div>*/}
+						<div className="checkFrog" id='checkFrog1'>
+							<img src={miniFrog1} />
+							<img src={miniFrog2} />
 						</div>
 					</div>
-					<div className="checkFrog"></div>
+
 					<div className="weeks" > 7 недель из 40 </div>
 					<div className="scores" > 40 баллов </div>
 				</Card>
@@ -60,8 +66,9 @@ const StudentProfile = props => (
 						Работа в Figma
 					</Div>
 					<div className='progressWrapper' id="progress2">
-						<div className='courseProgressBack'>
-							<div className='courseProgressBack'></div>
+						<div className="checkFrog" id='checkFrog2'>
+							<img src={miniFrog1} />
+							<img src={miniFrog2} />
 						</div>
 					</div>
 					<div className="weeks"> 27 недель из 40 </div>
@@ -73,8 +80,9 @@ const StudentProfile = props => (
 						Курс 3D моделирования
 					</Div>
 					<div className='progressWrapper' id="progress3">
-						<div className='courseProgressBack'>
-							<div className='courseProgressBack'></div>
+						<div className="checkFrog" id='checkFrog3'>
+							<img src={miniFrog1} />
+							<img src={miniFrog2} />
 						</div>
 					</div>
 					<div className="weeks" > 38 недель из 40 </div>
