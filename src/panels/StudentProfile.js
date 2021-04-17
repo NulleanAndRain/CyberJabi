@@ -15,8 +15,9 @@ import {
 
 import './StudentProfile.css';
 import froge from '../img/groups/frog.png';
-import frogeGlasses from '../img/frog_glasses.png'
-import persik from '../img/persik.png';
+import course1 from '../img/image2.png';
+import course2 from '../img/image3.png';
+import course3 from '../img/3dsMax.png';
 import roadmap from '../img/roadmap.png';
 
 const StudentProfile = props => (
@@ -40,31 +41,44 @@ const StudentProfile = props => (
 		<Group>
 			<CardScroll>
 				<Card className="courseCard">
-					<img className='courceImg' size={120} src={frogeGlasses} />
+					<img className='courceImg' id="img1" src={course1} />
 					<Div className='courseName'>
-						course 1
+						Курс по CSS
 					</Div>
-					<div> 7/9 </div>
-					{/*<div className='progressWrapper'>
+					<div className='progressWrapper' id="progress1">
 						<div className='courseProgressBack'>
 							<div className='courseProgressBack'></div>
 						</div>
-						7/9
-					</div>*/}
+					</div>
+					<div className="checkFrog"></div>
+					<div className="weeks" > 7 недель из 40 </div>
+					<div className="scores" > 40 баллов </div>
 				</Card>
-
 				<Card className="courseCard">
-					<img className='courceImg' size={120} src={persik} />
+					<img className='courceImg' id="img2" src={course2} />
 					<Div className='courseName'>
-						course 2
+						Работа в Figma
 					</Div>
-					<div> 5/16 </div>
-					{/*<div className='progressWrapper'>
+					<div className='progressWrapper' id="progress2">
 						<div className='courseProgressBack'>
 							<div className='courseProgressBack'></div>
 						</div>
-						7/9
-					</div>*/}
+					</div>
+					<div className="weeks"> 27 недель из 40 </div>
+					<div className="scores" > 230 баллов </div>
+				</Card>
+				<Card className="courseCard">
+					<img className='courceImg'  src={course3} />
+					<Div className='courseName'>
+						Курс 3D моделирования
+					</Div>
+					<div className='progressWrapper' id="progress3">
+						<div className='courseProgressBack'>
+							<div className='courseProgressBack'></div>
+						</div>
+					</div>
+					<div className="weeks" > 38 недель из 40 </div>
+					<div className="scores" > 478 баллов</div>
 				</Card>
 			</CardScroll>
 		</Group>
