@@ -24,7 +24,7 @@ import './RoleText.css';
 const Role = props => (
 	<Panel   id={props.id}>
 		<PanelHeader
-			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
+			// left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
 		>
 			Главная
 		</PanelHeader>
@@ -35,7 +35,7 @@ const Role = props => (
 			<Card className="CardRole"> <Avatar size="100%" className="Role" src={parent} onClick={props.go} data-to="home" alt="role parent"/>
 				<div className="RoleText"> Я родитель </div>
 			</Card>
-			<Card className="CardRole"> <Avatar size="100%" className="Role" src={student} onClick={props.go} data-to="home" alt="role student"/>
+			<Card className="CardRole"> <Avatar size="100%" className="Role" src={student} onClick={props.go} data-to="studentProfile" alt="role student"/>
 				<div className="RoleText"> Я ученик </div>
 			</Card>
 

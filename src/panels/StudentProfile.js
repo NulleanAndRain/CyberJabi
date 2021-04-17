@@ -22,7 +22,7 @@ import roadmap from '../img/roadmap.png';
 const StudentProfile = props => (
 	<Panel id={props.id}>
 		<PanelHeader
-			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
+			left={<PanelHeaderBack onClick={props.go} data-to="role"/>}
 		> Ученик
 		</PanelHeader>
 		<Group>
