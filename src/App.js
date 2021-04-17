@@ -11,9 +11,10 @@ import LoadScreen from './panels/LoadScreen'
 import StudentProfile from './panels/StudentProfile'
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('studentProfile');
+	const [activePanel, setActivePanel] = useState('home');
 	const [fetchedUser, setUser] = useState(null);
-	const [popout, setPopout] = useState(<LoadScreen />);
+	// const [popout, setPopout] = useState(<LoadScreen />);
+	const [popout, setPopout] = useState(null);
 
 	useEffect(() => {
 		bridge.subscribe(({ detail: { type, data }}) => {

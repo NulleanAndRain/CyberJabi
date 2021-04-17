@@ -1,6 +1,38 @@
 .Persik {
   display: block;
-  width: 30%;
+  width: min-content;
   max-width: 240px;
-  margin: 20px auto;
+  margin: 20px;
+  float: left;
+}
+
+.course-header .Group__inner {
+  position: relative;
+  height: 200px;
+  margin: 10px;
+}
+
+.course-header-2 .Group__inner {
+  position: relative;
+  height: 120px;
+  margin: 10px;
+}
+
+.course-text {
+  margin-left: 110px;
+}
+
+.course-badge {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  float: right;
+}
+
+.course-score {
+  margin-left: -20px;
+}
+
+.course-card {
+
 }
