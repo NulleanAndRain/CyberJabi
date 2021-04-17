@@ -18,15 +18,11 @@ import teacher from '../icons/groups/teacher.png';
 import parent from '../icons/groups/parent.png';
 import student from '../icons/groups/student.png';
 import './Role.css';
-import './PanelRole.css';
-import './CardRole.css';
-import './RoleText.css';
+import './Common.css';
 const Role = props => (
 	<Panel   id={props.id}>
-		<PanelHeader
-			// left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
-		>
-			Главная
+		<PanelHeader>
+			<div className = 'panelHeader'> Главная </div>
 		</PanelHeader>
 		<div className="PanelRole">
 			<Card className="CardRole"> <Avatar size="100%"  className="Role" src={teacher} onClick={props.go} data-to="home" alt="role teacher"/>

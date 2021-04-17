@@ -5,5 +5,26 @@
     /*background-color: blue;*/
     justify-content: center;
     align-items: first;
-
+}
+.RoleText{
+    width: 100%;
+    padding-left: 20px;
+}
+.PanelRole{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*background-color: red;*/
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px ;
+    padding-right: 80px ;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.CardRole{
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    width: 120px;
 }

@@ -14,6 +14,7 @@ import {
 } from "@vkontakte/vkui";
 
 import './StudentProfile.css';
+import './Common.css';
 import froge from '../img/groups/frog.png';
 import course1 from '../img/image2.png';
 import course2 from '../img/image3.png';
@@ -26,7 +27,8 @@ const StudentProfile = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<PanelHeaderBack onClick={props.go} data-to="role"/>}
-		> Ученик
+		> 
+			<div className = 'panelHeader'> Ученик </div>
 		</PanelHeader>
 		<Group>
 			{props.fetchedUser &&
