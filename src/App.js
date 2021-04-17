@@ -7,14 +7,14 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
 import Persik from './panels/Persik';
+import Role from './panels/Role';
 import LoadScreen from './panels/LoadScreen'
 import StudentProfile from './panels/StudentProfile'
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('home');
+	const [activePanel, setActivePanel] = useState('role');
 	const [fetchedUser, setUser] = useState(null);
-	// const [popout, setPopout] = useState(<LoadScreen />);
-	const [popout, setPopout] = useState(null);
+	const [popout, setPopout] = useState(<LoadScreen />);
 
 	useEffect(() => {
 		bridge.subscribe(({ detail: { type, data }}) => {
@@ -29,8 +29,7 @@ const App = () => {
 			setUser(user);
 			setPopout(null);
 		}
-		setTimeout(fetchData, 100);
-		// fetchData()
+		fetchData();
 	}, []);
 
 	const go = e => {
@@ -43,6 +42,7 @@ const App = () => {
 				<View activePanel={activePanel} popout={popout}>
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
 					<Persik id='persik' go={go} />
+					<Role id='role' go={go} />
 					<StudentProfile id='studentProfile' go={go} fetchedUser={fetchedUser} />
 				</View>
 			</AppRoot>
@@ -51,4 +51,3 @@ const App = () => {
 }
 
 export default App;
-
