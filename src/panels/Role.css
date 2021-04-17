@@ -28,3 +28,30 @@
     background-color: inherit;
     width: 120px;
 }
+.CardRole:hover {
+    cursor: pointer;
+}
+
+.roleHeader{
+    /*margin-top: 1em;*/
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+}
+
+.panelBox{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.logoSmall{
+    max-width: 40%;
+    height: auto;
+}
