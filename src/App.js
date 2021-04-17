@@ -8,9 +8,10 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Home from './panels/Home';
 import Persik from './panels/Persik';
 import LoadScreen from './panels/LoadScreen'
+import StudentProfile from './panels/StudentProfile'
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('home');
+	const [activePanel, setActivePanel] = useState('studentProfile');
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(<LoadScreen />);
 
@@ -27,7 +28,7 @@ const App = () => {
 			setUser(user);
 			setPopout(null);
 		}
-		setTimeout(fetchData, 3000);
+		setTimeout(fetchData, 100);
 		// fetchData()
 	}, []);
 
@@ -41,6 +42,7 @@ const App = () => {
 				<View activePanel={activePanel} popout={popout}>
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
 					<Persik id='persik' go={go} />
+					<StudentProfile id='studentProfile' go={go} fetchedUser={fetchedUser} />
 				</View>
 			</AppRoot>
 		</AdaptivityProvider>

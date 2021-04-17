@@ -1,0 +1,47 @@
+.profileName{
+	font-family: Verdana;
+	font-size: 2em;
+}
+.profileCell{
+	width: 100%;
+}
+
+.courceImg{
+	width: auto;
+	max-height: 25vh;
+
+}
+.courseCard{
+	height: 240px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	justify-content: center; 
+}
+.courseName{
+	font-family: Verdana;
+	font-size: 1.5em;
+}
+
+.progressWrapper{
+	width: 100%;
+	height: 2em;
+	display: flex;
+	flex-flow: row;
+	align-content: space-around;
+}
+.courseProgress{
+	width: 77%;
+	height: 100%;
+	background-color: #8FA;
+}
+.courseProgressBack{
+	width: 80%;
+	display: flex;
+	flex-flow: row;
+	align-content: flex-start;
+	background-color: #aaa;
+	height: 2em;
+}
