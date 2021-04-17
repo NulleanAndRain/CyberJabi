@@ -16,12 +16,12 @@ import {
 import './StudentProfile.css';
 import './Common.css';
 import froge from '../img/groups/frog.png';
-import course1 from '../img/image2.png';
-import course2 from '../img/image3.png';
-import course3 from '../img/3dsMax.png';
+import course1 from '../img/courses/image2.png';
+import course2 from '../img/courses/image3.png';
+import course3 from '../img/courses/3dsMax.png';
 import roadmap from '../img/roadmap.png';
-import miniFrog1 from '../img/checkFrog3.png';
-import miniFrog2 from '../img/checkFrog4.png';
+import miniFrog1 from '../img/icons/checkFrog3.png';
+import miniFrog2 from '../img/icons/checkFrog4.png';
 
 const StudentProfile = props => (
 	<Panel id={props.id}>
