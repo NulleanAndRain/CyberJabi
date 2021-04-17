@@ -17,15 +17,13 @@ import './LoadScreen.css';
 
 const LoadScreen = () => (
 	<Panel>
-		<PopoutWrapper alignY="center" alignX="center">
-			<RichCell
-				disabled
+		<PopoutWrapper alignY="center" alignX="center" hasMask={false}>
+			<RichCell disabled
 				before={<Avatar mode='image' size={144} src={froge} />}
-				className='loadScreenCell'
-			>
+				className='loadScreenCell'>
 				<Div className='loadScreenMainText'> ле гушька </Div>
+				<Div className='loadScreenBottomText'> что-то про лягушатник </Div>
 			</RichCell>
-			<ScreenSpinner size='large' />
 		</PopoutWrapper>
 	</Panel>
 );

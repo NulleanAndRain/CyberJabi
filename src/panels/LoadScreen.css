@@ -2,8 +2,17 @@
 	width: 80%;
 	align-items: flex-start;
 	align-content: flex-start;
+	display: flex;
 }
 .loadScreenMainText{
+	text-align: left;
 	padding: 1em;
 	font-size: 36px;
+}
+.loadScreenBottomText{
+	text-align: left;
+	margin-top: -1em;
+	padding: 0.5em;
+	color: #222;
+	font-size: 1.5em;
 }
