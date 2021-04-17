@@ -1,0 +1,9 @@
+.loadScreenCell{
+	width: 80%;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.loadScreenMainText{
+	padding: 1em;
+	font-size: 36px;
+}
