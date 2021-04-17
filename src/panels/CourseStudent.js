@@ -6,7 +6,7 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
 import persik from '../img/persik.png';
-import './Persik.css';
+import './CourseStudent.css';
 import './Common.css';
 import Group from "@vkontakte/vkui/dist/components/Group/Group";
 import Header from "@vkontakte/vkui/dist/components/Header/Header";
@@ -17,9 +17,7 @@ import {Icon16Dropdown} from "@vkontakte/icons";
 import Button from "@vkontakte/vkui/dist/components/Button/Button";
 
 const BADGE_LINK = 'https://thumbs.dreamstime.com/b/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-49893413.jpg'
-const Persik = props => {
-
-
+const CourseStudent = props => {
 	return (
 		<Panel id={props.id}>
 			<PanelHeader
@@ -87,9 +85,9 @@ const Persik = props => {
 	);
 }
 
-Persik.propTypes = {
+CourseStudent.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default CourseStudent;

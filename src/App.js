@@ -6,7 +6,7 @@ import { AdaptivityProvider, AppRoot } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
-import Persik from './panels/Persik';
+import CourseStudent from './panels/CourseStudent';
 import Role from './panels/Role';
 import LoadScreen from './panels/LoadScreen'
 import StudentProfile from './panels/StudentProfile'
@@ -41,7 +41,7 @@ const App = () => {
 			<AppRoot>
 				<View activePanel={activePanel} popout={popout}>
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
-					<Persik id='matem' go={go} />
+					<CourseStudent id='matem' go={go} />
 					<Role id='role' go={go} />
 					<StudentProfile id='studentProfile' go={go} fetchedUser={fetchedUser} />
 				</View>

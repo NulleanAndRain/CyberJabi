@@ -75,7 +75,7 @@
 	box-sizing: border-box;
 }
 #progress0{
-	background: linear-gradient(90deg, #6DE504 -0.11%, #FBC11B 34.69%), #C4C4C4;
+	background: linear-gradient(90deg, #6DE504 30%, #FBC11B 50%), #C4C4C4;
 }
 #progress1{
 	background: linear-gradient(90deg, #6DE504 -0.11%, #FBC11B 34.69%), #C4C4C4;
