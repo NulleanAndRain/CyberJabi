@@ -99,7 +99,7 @@
 	z-index: 1000;
 	position: relative;
 	right: 5px;
-	bottom: 12px;
+	bottom: 13px;
 }
 #checkFrog1{
 	left: 21px;
@@ -109,4 +109,7 @@
 }
 #checkFrog3{
 	left: 133px;
+}
+#test{
+	background-color: red;
 }
