@@ -5,6 +5,7 @@
 	display: flex;
 }
 .loadScreenMainText{
+	font-family: Verdana;
 	text-align: left;
 	padding: 1em;
 	font-size: 36px;

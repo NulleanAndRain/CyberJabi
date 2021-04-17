@@ -12,17 +12,17 @@ import {
 } from "@vkontakte/vkui";
 import "@vkontakte/vkui/dist/vkui.css";
 
-import froge from '../icons/groups/frog.png';
+import froge from '../img/groups/frog.png';
 import './LoadScreen.css';
 
 const LoadScreen = () => (
 	<Panel>
 		<PopoutWrapper alignY="center" alignX="center" hasMask={false}>
 			<RichCell disabled
-				before={<Avatar mode='image' size={144} src={froge} />}
+				before={<img size={144} src={froge} />}
 				className='loadScreenCell'>
-				<Div className='loadScreenMainText'> ле гушька </Div>
-				<Div className='loadScreenBottomText'> что-то про лягушатник </Div>
+				<Div className='loadScreenMainText'> FroggySchool </Div>
+				<Div className='loadScreenBottomText'> Учись, играй, развивайся </Div>
 			</RichCell>
 		</PopoutWrapper>
 	</Panel>
