@@ -16,6 +16,8 @@ import {
 import './StudentProfile.css';
 import froge from '../img/groups/frog.png';
 import frogeGlasses from '../img/frog_glasses.png'
+import persik from '../img/persik.png';
+import roadmap from '../img/roadmap.png';
 
 const StudentProfile = props => (
 	<Panel id={props.id}>
@@ -32,6 +34,7 @@ const StudentProfile = props => (
 					<Avatar size={100} src={froge}/>
 				}>
 				<Div className="profileName"> {`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`} </Div>
+				<Div className="profileStatus"> Жабная жабка </Div>
 			</RichCell>}
 		</Group>
 		<Group>
@@ -41,6 +44,21 @@ const StudentProfile = props => (
 					<Div className='courseName'>
 						course 1
 					</Div>
+					<div> 7/9 </div>
+					{/*<div className='progressWrapper'>
+						<div className='courseProgressBack'>
+							<div className='courseProgressBack'></div>
+						</div>
+						7/9
+					</div>*/}
+				</Card>
+
+				<Card className="courseCard">
+					<img className='courceImg' size={120} src={persik} />
+					<Div className='courseName'>
+						course 2
+					</Div>
+					<div> 5/16 </div>
 					{/*<div className='progressWrapper'>
 						<div className='courseProgressBack'>
 							<div className='courseProgressBack'></div>
@@ -49,6 +67,9 @@ const StudentProfile = props => (
 					</div>*/}
 				</Card>
 			</CardScroll>
+		</Group>
+		<Group>
+			<img className='roadmap' src={roadmap} />
 		</Group>
 	</Panel>
 );

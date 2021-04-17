@@ -2,6 +2,11 @@
 	font-family: Verdana;
 	font-size: 2em;
 }
+.profileStatus{
+	font-family: Verdana;
+	font-size: 1.25em;
+	color: #444;
+}
 .profileCell{
 	width: 100%;
 }
@@ -44,4 +49,8 @@
 	align-content: flex-start;
 	background-color: #aaa;
 	height: 2em;
+}
+
+.roadmap{
+	width: 100%;
 }
