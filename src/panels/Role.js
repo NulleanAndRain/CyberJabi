@@ -19,6 +19,7 @@ import './Common.css';
 const Role = props => (
 	<Panel id={props.id}>
 		<div className='panelBox'>
+			<img src={logo} className='logoSmall' />
 			<div className='panelHeader roleHeader'>
 				Кто Вы?
 			</div>
@@ -33,7 +34,6 @@ const Role = props => (
 					<div className="RoleText"> Я ученик </div>
 				</Card>
 			</div>
-			<img src={logo} className='logoSmall' />
 		</div>
 	</Panel>
 );
