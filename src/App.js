@@ -41,7 +41,7 @@ const App = () => {
 			<AppRoot>
 				<View activePanel={activePanel} popout={popout}>
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
-					<Persik id='persik' go={go} />
+					<Persik id='matem' go={go} />
 					<Role id='role' go={go} />
 					<StudentProfile id='studentProfile' go={go} fetchedUser={fetchedUser} />
 				</View>

@@ -7,6 +7,7 @@ import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/Pan
 
 import persik from '../img/persik.png';
 import './Persik.css';
+import './Common.css';
 import Group from "@vkontakte/vkui/dist/components/Group/Group";
 import Header from "@vkontakte/vkui/dist/components/Header/Header";
 import Avatar from "@vkontakte/vkui/dist/components/Avatar/Avatar";
@@ -22,9 +23,9 @@ const Persik = props => {
 	return (
 		<Panel id={props.id}>
 			<PanelHeader
-				left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
+				left={<PanelHeaderBack onClick={props.go} data-to="studentProfile"/>}
 			>
-				Математика для новичков
+				<div className = 'panelHeader'> Математика для новичков </div>
 			</PanelHeader>
 			<Group className="course-header">
 				<Avatar size={72} className="Persik" src={persik} alt="Persik The Cat"/>

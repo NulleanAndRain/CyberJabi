@@ -74,6 +74,9 @@
 	padding: 35px 25px 40px 25px;
 	box-sizing: border-box;
 }
+#progress0{
+	background: linear-gradient(90deg, #6DE504 -0.11%, #FBC11B 34.69%), #C4C4C4;
+}
 #progress1{
 	background: linear-gradient(90deg, #6DE504 -0.11%, #FBC11B 34.69%), #C4C4C4;
 }
@@ -100,6 +103,9 @@
 	position: relative;
 	right: 5px;
 	bottom: 13px;
+}
+#checkFrog0{
+	left: 40%;
 }
 #checkFrog1{
 	left: 21px;
