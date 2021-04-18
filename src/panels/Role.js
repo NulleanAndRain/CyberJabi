@@ -16,6 +16,7 @@ import student from '../img/groups/student.png';
 import logo from '../img/logo.png';
 import './Role.css';
 import './Common.css';
+import ParentProfile from "./ParentProfile";
 const Role = props => (
 	<Panel id={props.id}>
 		<div className='panelBox'>

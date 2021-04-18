@@ -1,0 +1,63 @@
+.direction{
+    width: 587px;
+    height: 212px;
+    margin-left: 13px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.directionDiagram{
+    width: 138px;
+    height: 138px;
+}
+.directionImg{
+    width: 10px;
+    height: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.directionImgText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.diagramColour{
+    width: 25px;
+    height: 16px;
+    border-radius: 5px;
+    margin: 0px 9px 6px 17px;
+}
+.directionDiagramBlock{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.colourBlock{
+    display: flex;
+    flex-direction: row;
+}
+#art{
+    background: #FF0000;
+}
+#naturalScience{
+    background: #FFB800;
+}
+#socialHumanitarian{
+    background: #FBE51B;
+}
+#sport{
+    background: #8FFF00;
+}
+#technical{
+    background: #1B8FFB;
+}
