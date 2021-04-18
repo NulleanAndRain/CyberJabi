@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Icon48AddAwardOutline } from '@vkontakte/icons';
 import {
 	Div,
 	Panel,
@@ -49,7 +50,7 @@ const StudentFromTeacher = props => (
 		</Group>
 		<Group className="course-header">
 			<CardGrid className='tasks'>
-				<Card size="l" mode="outline" style={{ padding: 10, width: '28%' }} className="course-card">
+				<Card size="l" mode="outline" style={{ padding: 10, width: '28%', height: 200}} className="course-card">
 					<div style={{ height: 142 }} >
 						<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
 						<Text>Дата: 1.03.2021</Text>
@@ -57,9 +58,12 @@ const StudentFromTeacher = props => (
 						<Text>Тема: Производная</Text>
 						<Text>Задание: Изучить параграф 2, решить задание 24</Text>
 						<Text>Баллы за урок: 10</Text>
+						<div className='addBage'>
+							<Icon48AddAwardOutline className='addSticker' fill='#4bb34b'></Icon48AddAwardOutline>
+						</div>
 					</div>
 				</Card>
-				<Card size="l" mode="outline" style={{padding: 10, width: '28%'}} className="course-card">
+				<Card size="l" mode="outline" style={{padding: 10, width: '28%', height: 200}} className="course-card">
 					<div style={{  height: 126  }} >
 						<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
 						<Text>Дата: 8.03.2021</Text>
@@ -67,16 +71,24 @@ const StudentFromTeacher = props => (
 						<Text>Тема: Интеграл</Text>
 						<Text>Задание: Изучить параграф 3, решить задания 36, 37, 38</Text>
 						<Text>Баллы за урок: 8</Text>
-						<Avatar className="" size={36} src={bage} alt="Persik The Cat"/>
+						<div class='addBage'>
+							<Icon48AddAwardOutline className='addSticker' fill='#4bb34b'></Icon48AddAwardOutline>
+							<Avatar className="" size={36} src={bage} alt="Persik The Cat"/>
+						</div>
 					</div>
 				</Card>
-				<Card size="m" mode="outline" style={{padding: 10, width: '28%'}} className="course-card">
+				<Card size="m" mode="outline" style={{padding: 10, width: '28%', height: 200}} className="course-card">
 					<div style={{  height: 142 }} >
-						<Text>Дата: 15.03.2021</Text>
+						<Button style={{ marginTop: 10, float: 'right', opacity: 0.8, paddingLeft: 7, paddingRight: 7}} mode="commerce" disabled >Принять</Button>
+						<Text>Дата:</Text>
+						<Text> 15.03.2021</Text>
 						<Text>Время: 11:00</Text>
 						<Text>Тема: Логарифм</Text>
 						<Text>Задание: Изучить параграф 4, решить задание 42</Text>
 						<Text>Баллы за урок: -</Text>
+						<div className='addBage'>
+							<Icon48AddAwardOutline className='addSticker' fill='#4bb34b'></Icon48AddAwardOutline>
+						</div>
 					</div>
 				</Card>
 			</CardGrid>

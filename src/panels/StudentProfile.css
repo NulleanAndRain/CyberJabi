@@ -127,3 +127,24 @@
 	text-align: center;
 	justify-content: center;
 }
+.addSticker{
+	fill:#4bb34b;
+}
+.task{
+	padding-bottom: 10px;
+}
+.addBage{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.edit{
+	margin-left: 13px;
+	height: 36px;
+	width: 587px;
+	background-color: #ebedf0;
+	border-style: none;
+	border-radius: 10px;
+	color: #3F8AE0;
+}
+

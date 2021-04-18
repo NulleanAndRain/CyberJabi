@@ -42,6 +42,7 @@ const StudentProfile = props => (
 				<Div className="profileName"> {`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`} </Div>
 				<Div className="profileStatus"> Жабная жабка </Div>
 			</RichCell>}
+			<button className="edit"> Редактировать </button>
 		</Group>
 		<Group>
 			<CardScroll>
