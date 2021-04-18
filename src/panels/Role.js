@@ -25,7 +25,7 @@ const Role = props => (
 				Кто Вы?
 			</div>
 			<div className="PanelRole">
-				<Card className="CardRole" onClick={props.go} data-to="home">
+				<Card className="CardRole" onClick={props.go} data-to="teacherProfile">
 					<Avatar size="100%" className="Role" src={teacher} alt="role teacher"/>
 					<div className="RoleText"> Я учитель</div>
 				</Card>

@@ -12,10 +12,7 @@
   margin: 10px;
 
 }
-.course-header{
-  display: flex;
-  flex-direction: row;
-}
+
 .course-header-2 .Group__inner {
   position: relative;
   height: 120px;

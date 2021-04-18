@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  Div,
-  Panel,
-  PanelHeader,
-  PanelHeaderBack,
-  Group,
-  CardScroll,
-  Card,
-  Avatar,
-  RichCell,
+	Div,
+	Panel,
+	PanelHeader,
+	PanelHeaderBack,
+	Group,
+	CardScroll,
+	Card,
+	Avatar,
+	RichCell, Text,
 } from "@vkontakte/vkui";
 
 import './StudentProfile.css';
@@ -25,6 +25,10 @@ import miniFrog1 from '../img/icons/checkFrog3.png';
 import miniFrog2 from '../img/icons/checkFrog4.png';
 import diagram from '../img/diagram.png';
 import direction from '../img/direction.png';
+import achCyber from "../img/ach/svg/cyberjaba.svg";
+import achGranit from "../img/ach/svg/granit.svg";
+import achSigner from "../img/ach/svg/signer.svg";
+import achArtist from "../img/ach/svg/malevich.svg";
 
 const ParentProfile = props => (
 	<Panel id={props.id}>
@@ -136,6 +140,58 @@ const ParentProfile = props => (
 					</div>
 					<div className="weeks" > 38 недель из 40 </div>
 					<div className="scores" > 478 баллов</div>
+				</Card>
+			</CardScroll>
+		</Group>
+		<Group className="course-header">
+			<CardScroll>
+				<Card className='advancementCard'>
+					<img size={150} src={achCyber} alt="Persik The Cat"/>
+					<Text className='advancementTitle'>
+						Кибержаба
+					</Text>
+					<Text className='advancementDate'>
+						06.06.2077
+					</Text>
+					<Text className='advancementDescr'>
+						Компьютер - твой лучший друг
+					</Text>
+				</Card>
+				<Card className='advancementCard'>
+					<img size={150} src={achGranit} alt="Persik The Cat"/>
+					<Text className='advancementTitle'>
+						Поедатель гранита
+					</Text>
+					<Text className='advancementDate'>
+						10.03.2021
+					</Text>
+					<Text className='advancementDescr'>
+						В совершенстве подготовился к уроку
+					</Text>
+				</Card>
+				<Card className='advancementCard'>
+					<img size={150} src={achSigner} alt="Persik The Cat"/>
+					<Text className='advancementTitle'>
+						Певец
+					</Text>
+					<Text className='advancementDate'>
+						01.02.2021
+					</Text>
+					<Text className='advancementDescr'>
+						Без запинки и с выражением рассказал стихи
+					</Text>
+				</Card>
+				<Card className='advancementCard'>
+					<img size={150} src={achArtist} alt="Persik The Cat"/>
+					<Text className='advancementTitle'>
+						Художник
+					</Text>
+					<Text className='advancementDate'>
+						05.12.2020
+					</Text>
+					<Text className='advancementDescr'>
+						Превзошел квадрат Малевича
+					</Text>
 				</Card>
 			</CardScroll>
 		</Group>

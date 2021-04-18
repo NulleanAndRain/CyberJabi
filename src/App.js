@@ -12,7 +12,7 @@ import LoadScreen from './panels/LoadScreen';
 import StudentProfile from './panels/StudentProfile';
 import CourseParent from './panels/CourseParent';
 import ParentProfile from "./panels/ParentProfile";
-
+import TeacherProfile from "./panels/TeacherProfile";
 const App = () => {
 	const [activePanel, setActivePanel] = useState('role');
 	const [fetchedUser, setUser] = useState(null);
@@ -48,6 +48,7 @@ const App = () => {
 					<StudentProfile id='studentProfile' go={go} fetchedUser={fetchedUser} />
 					<CourseParent id='parentCourse' go={go} />
 					<ParentProfile id='parentProfile' go={go} fetchedUser={fetchedUser} />
+					<TeacherProfile id='teacherProfile' go={go} fetchedUser={fetchedUser} />
 				</View>
 			</AppRoot>
 		</AdaptivityProvider>
