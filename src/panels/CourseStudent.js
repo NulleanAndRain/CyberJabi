@@ -12,9 +12,15 @@ import Group from "@vkontakte/vkui/dist/components/Group/Group";
 import Header from "@vkontakte/vkui/dist/components/Header/Header";
 import Avatar from "@vkontakte/vkui/dist/components/Avatar/Avatar";
 import Div from "@vkontakte/vkui/dist/components/Div/Div";
-import {Card, CardGrid, Progress, Tabs, TabsItem, Text, CardScroll} from "@vkontakte/vkui";
-import {Icon16Dropdown} from "@vkontakte/icons";
+import {Card, CardGrid, Progress, Tabs, TabsItem, Text, SimpleCell, CardScroll, List} from "@vkontakte/vkui";
 import Button from "@vkontakte/vkui/dist/components/Button/Button";
+
+import {
+	Icon16Dropdown,
+	Icon16UserOutline,
+	Icon16Location,
+	Icon16CommentOutline
+} from '@vkontakte/icons'
 
 const BADGE_LINK = 'https://thumbs.dreamstime.com/b/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-49893413.jpg'
 const CourseStudent = props => {
@@ -29,9 +35,20 @@ const CourseStudent = props => {
 				<Avatar size={72} className="Persik" src={persik} alt="Persik The Cat"/>
 				<Div>
 					<Header>Математика для новичков </Header>
-					<Text className="course-text">Преподаватель: Иммануил Гедеонович</Text>
-					<Text className="course-text">Направленность: точные науки</Text>
-					<Text className="course-text">Здесь вы научите управлять интегралами и бросаться полиномами</Text>
+					<List className='course-text'>
+						<Text>
+							<Icon16UserOutline className='inlineIcon'/>
+							Преподаватель: Иммануил Гедеонович
+						</Text>
+						<Text>
+							<Icon16Location className='inlineIcon'/>
+							Направленность: точные науки
+						</Text>
+						<Text>
+							<Icon16CommentOutline className='inlineIcon'/>
+							Здесь вы научитесь управлять интегралами и бросаться полиномами
+						</Text>
+					</List>
 				</Div>
 				<Avatar className="course-badge" size={72} src={BADGE_LINK} alt="Persik The Cat"/>
 			</Group>

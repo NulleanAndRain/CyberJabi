@@ -19,7 +19,7 @@
 }
 
 .course-text {
-  margin-left: 110px;
+  margin-left: 100px;
 }
 
 .course-badge {
@@ -33,6 +33,8 @@
   margin-left: -20px;
 }
 
-.course-card {
-
+.inlineIcon{
+  display: inline-block;
+  padding-right: 0.5em;
+  margin-left: -16px;
 }
