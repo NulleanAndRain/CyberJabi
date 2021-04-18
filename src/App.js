@@ -16,7 +16,7 @@ import TeacherProfile from "./panels/TeacherProfile";
 import StudentFromTeacher from "./panels/StudentFromTeacher";
 import CourseTeacher from './panels/CourseTeacher';
 const App = () => {
-	const [activePanel, setActivePanel] = useState('studentFromTeacher');
+	const [activePanel, setActivePanel] = useState('role');
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(<LoadScreen />);
 

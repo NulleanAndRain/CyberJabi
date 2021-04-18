@@ -74,7 +74,7 @@ const CourseTeacher = props => {
 							<Icon56UserAddOutline />
 						</Avatar>
 						{props.fetchedUser && props.fetchedUser.photo_200 &&
-						<Avatar size={120} className='_margin' src={props.fetchedUser.photo_200} />}
+						<Avatar size={120} className='_margin' onClick={props.go} data-to='studentFromTeacher' src={props.fetchedUser.photo_200} />}
 						<Avatar size={120} className='_margin' src={froge} />
 						<Avatar size={120} className='_margin' src={persik} />
 						<Avatar size={120} className='_margin' src={student} />

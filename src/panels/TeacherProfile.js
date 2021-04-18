@@ -40,13 +40,13 @@ const TeacherProfile = props => (
 		</Group>
 		<Group>
 			<CardScroll>
-				<Card className="courseCardTeacher" onClick={props.go} data-to='studentCourse'>
+				<Card className="courseCardTeacher" onClick={props.go} data-to='teacherCourse'>
 					<img className='courceImg' id="img0" src={course0} />
 					<Div className='courseName'>
 						Математика для новичков
 					</Div>
 				</Card>
-				<Card className="courseCardTeacher" onClick={props.go} data-to='studentCourse'>
+				<Card className="courseCardTeacher" onClick={props.go} data-to='teacherCourse'>
 					<img className='courceImg' id="img0" src={course1} />
 					<Div className='courseName'>
 						Дискретная математика
