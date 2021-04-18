@@ -25,6 +25,7 @@ import {
 import achGranit from '../img/ach/svg/granit.svg';
 import achSigner from '../img/ach/svg/signer.svg';
 import achArtist from '../img/ach/svg/malevich.svg';
+import achCyber from '../img/ach/svg/cyberjaba.svg';
 
 const CourseParent = props => {
 	return (
@@ -74,12 +75,24 @@ const CourseParent = props => {
 			<Group className="course-header">
 				<CardScroll>
 					<Card className='advancementCard'>
+						<img size={150} src={achCyber} alt="Persik The Cat"/>
+						<Text className='advancementTitle'>
+							Кибержаба
+						</Text>
+						<Text className='advancementDate'>
+							06.06.2077
+						</Text>
+						<Text className='advancementDescr'>
+							Компьютер - твой лучший друг
+						</Text>
+					</Card>
+					<Card className='advancementCard'>
 						<img size={150} src={achGranit} alt="Persik The Cat"/>
 						<Text className='advancementTitle'>
 							Поедатель гранита
 						</Text>
 						<Text className='advancementDate'>
-							10.10.2077
+							10.03.2021
 						</Text>
 						<Text className='advancementDescr'>
 							В совершенстве подготовился к уроку
