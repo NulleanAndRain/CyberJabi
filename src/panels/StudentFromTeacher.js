@@ -5,6 +5,7 @@ import { Icon48AddAwardOutline } from '@vkontakte/icons';
 import {
 	Div,
 	Panel,
+	Header,
 	PanelHeader,
 	PanelHeaderBack,
 	Group,
@@ -21,7 +22,6 @@ import course0 from '../img/math.jpg';
 import course1 from '../img/courses/image2.png';
 import course2 from '../img/courses/image3.png';
 import course3 from '../img/courses/3dsMax.png';
-import roadmap from '../img/roadmap.png';
 import miniFrog1 from '../img/icons/checkFrog3.png';
 import miniFrog2 from '../img/icons/checkFrog4.png';
 import direction from "../img/direction.png";
@@ -47,6 +47,22 @@ const StudentFromTeacher = props => (
 				<Div className="profileName"> {`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`} </Div>
 				<Div className="profileStatus"> Жабная жабка </Div>
 			</RichCell>}
+		</Group>
+		<Group className="course-header-2">
+			<Header>
+				Прогресс курса: 4/10 недель
+			</Header>
+			<Div className='progressWide'>
+				<div className='progressWrapper progressWide' id="progress2">
+					<div className="checkFrog" id='checkFrog2' style={{left:'40%'}}>
+						<img src={miniFrog1} />
+						<img src={miniFrog2} />
+					</div>
+				</div>
+			</Div>
+			<Div>
+				<Header className="course-score">Баллы за курс: 69</Header>
+			</Div>
 		</Group>
 		<Group className="course-header">
 			<CardGrid className='tasks'>

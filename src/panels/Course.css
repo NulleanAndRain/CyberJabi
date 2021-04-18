@@ -90,3 +90,7 @@
 .course-card{
   min-height: 160px;
 }
+
+.progressWide{
+  min-width: 90%;
+}

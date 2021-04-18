@@ -23,6 +23,9 @@ import {
 } from '@vkontakte/icons'
 
 import bage from '../img/ach/svg/granit.svg';
+import miniFrog1 from '../img/icons/checkFrog3.png';
+import miniFrog2 from '../img/icons/checkFrog4.png';
+
 const CourseStudent = props => {
 	return (
 		<Panel id={props.id}>
@@ -61,8 +64,13 @@ const CourseStudent = props => {
 				<Header>
 					Прогресс курса: 4/10 недель
 				</Header>
-				<Div>
-					<Progress value={40} />
+				<Div className='progressWide'>
+					<div className='progressWrapper progressWide' id="progress2">
+						<div className="checkFrog" id='checkFrog2' style={{left:'40%'}}>
+							<img src={miniFrog1} />
+							<img src={miniFrog2} />
+						</div>
+					</div>
 				</Div>
 				<Div>
 					<Header className="course-score">Баллы за курс: 69</Header>
