@@ -45,3 +45,27 @@
   padding-right: 0.5em;
   margin-left: -16px;
 }
+
+.advancementCard{
+  height: 240px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+.advancementTitle{
+  font-size: 1.2em;
+}
+.advancementDate{
+  font-size: .7em;
+  text-decoration: underline;
+}
+.advancementDescr{
+  font-size: .9em;
+}
+
+._pad{
+  color: rgba(255, 255, 255, 0);
+}
