@@ -15,7 +15,8 @@
 	width: 150px;
 	height: 150px;
 	border: 1px solid #6D7885;
-	border-radius: 10px ;
+	border-radius: 10px;
+
 	background-color: white;
 }
 .courseCard{
@@ -115,4 +116,14 @@
 }
 #checkFrog3{
 	left: 133px;
+}
+.courseCardTeacher{
+	height: 250px;
+	max-width: 190px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
 }
