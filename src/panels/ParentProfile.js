@@ -14,6 +14,7 @@ import {
 } from "@vkontakte/vkui";
 
 import './StudentProfile.css';
+import './ParentProfile.css';
 import './Common.css';
 import froge from '../img/groups/frog.png';
 import course1 from '../img/image2.png';
@@ -22,6 +23,8 @@ import course3 from '../img/3dsMax.png';
 import roadmap from '../img/roadmap.png';
 import miniFrog1 from '../img/checkFrog3.png';
 import miniFrog2 from '../img/checkFrog4.png';
+import diagram from '../img/diagram.png';
+import direction from '../img/direction.png';
 
 const ParentProfile = props => (
 	<Panel id={props.id}>
@@ -41,6 +44,39 @@ const ParentProfile = props => (
 				<Div className="profileName"> {`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`} </Div>
 				<Div className="profileStatus"> Жабная жабка </Div>
 			</RichCell>}
+		</Group>
+		<Group>
+			<Card className="direction">
+				<div className="directionImgText">
+					<img className="directionImg" src={direction}></img>
+					<div>Направленность ребёнка</div>
+				</div>
+				<div className="directionDiagramBlock">
+					<img className="directionDiagram" src={diagram}></img>
+					<div className="diagramColourBlocks">
+						<div className="colourBlock">
+							<div className="diagramColour" id="art"></div>
+							<div className="diagramText"> Художественная</div>
+						</div>
+						<div className="colourBlock">
+							<div className="diagramColour" id="naturalScience"></div>
+							<div className="diagramText"> Естественнонаучная</div>
+						</div>
+						<div className="colourBlock">
+							<div className="diagramColour" id="socialHumanitarian"></div>
+							<div className="diagramText"> Социально-гуманитарная</div>
+						</div>
+						<div className="colourBlock" >
+							<div className="diagramColour" id="sport"></div>
+							<div className="diagramText"> Физкультурно-спортивная</div>
+						</div>
+						<div className="colourBlock" >
+							<div className="diagramColour" id="technical"></div>
+							<div className="diagramText"> Техническая</div>
+						</div>
+					</div>
+				</div>
+			</Card>
 		</Group>
 		<Group>
 			<CardScroll>
