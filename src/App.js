@@ -6,14 +6,15 @@ import { AdaptivityProvider, AppRoot } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
-import CourseStudent from './panels/CourseStudent';
 import Role from './panels/Role';
 import LoadScreen from './panels/LoadScreen';
+import CourseStudent from './panels/CourseStudent';
 import StudentProfile from './panels/StudentProfile';
 import CourseParent from './panels/CourseParent';
 import ParentProfile from "./panels/ParentProfile";
 import TeacherProfile from "./panels/TeacherProfile";
 import StudentFromTeacher from "./panels/StudentFromTeacher";
+import CourseTeacher from './panels/CourseTeacher';
 const App = () => {
 	const [activePanel, setActivePanel] = useState('studentFromTeacher');
 	const [fetchedUser, setUser] = useState(null);
@@ -51,6 +52,7 @@ const App = () => {
 					<ParentProfile id='parentProfile' go={go} fetchedUser={fetchedUser} />
 					<TeacherProfile id='teacherProfile' go={go} fetchedUser={fetchedUser} />
 					<StudentFromTeacher id='studentFromTeacher' go={go} fetchedUser={fetchedUser} />
+					<CourseTeacher id='teacherCourse' go={go} fetchedUser={fetchedUser} />
 				</View>
 			</AppRoot>
 		</AdaptivityProvider>
