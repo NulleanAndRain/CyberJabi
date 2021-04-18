@@ -28,7 +28,7 @@ const Role = props => (
 				<Card className="CardRole"> <Avatar size="100%"  className="Role" src={teacher} onClick={props.go} data-to="home" alt="role teacher"/>
 					<div className="RoleText"> Я учитель</div>
 				</Card>
-				<Card className="CardRole"> <Avatar size="100%" className="Role" src={parent} onClick={props.go} data-to="home" alt="role parent"/>
+				<Card className="CardRole"> <Avatar size="100%" className="Role" src={parent} onClick={props.go} data-to="parentProfile" alt="role parent"/>
 					<div className="RoleText"> Я родитель </div>
 				</Card>
 				<Card className="CardRole"> <Avatar size="100%" className="Role" src={student} onClick={props.go} data-to="studentProfile" alt="role student"/>
