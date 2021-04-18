@@ -42,14 +42,13 @@ const CourseTeacher = props => {
 					<Icon20GearOutline className='inlineIcon customizeIco customizeAvatar' width={12} heigth={12}/>
 				</Avatar>
 				<Div>
-					<Header>Математика для новичков </Header>
+					<Header>
+						Математика для новичков
+						<Icon20GearOutline 
+							style = {{color:'#008CFF', marginRight:0, marginLeft:-2}}
+							className='inlineIcon customizeIco' width={12} heigth={12}/>
+					</Header>
 					<List className='course-text'>
-						{props.fetchedUser &&
-						<Text>
-							<Icon16UserOutline className='inlineIcon'/>
-							Преподаватель: {`${props.fetchedUser.first_name} ${props.fetchedUser.last_name}`}
-							<Icon20GearOutline className='inlineIcon customizeIco' width={12} heigth={12}/>
-						</Text>}
 						<Text>
 							<Icon16Location className='inlineIcon'/>
 							Направленность: точные науки
@@ -71,29 +70,14 @@ const CourseTeacher = props => {
 			</Group>
 			<Group header={<Header>Ученики</Header>}>
 				<CardScroll size='s'>
-					<Card className='centringCard'
-						style={{ width: '30%', backgroundColor: 'transparent' }}>
-						<Avatar size={150}>
+						<Avatar size={120} className='_margin'>
 							<Icon56UserAddOutline />
 						</Avatar>
-					</Card>
-					{props.fetchedUser && props.fetchedUser.photo_200 &&
-					<Card className='centringCard'
-						style={{width: '30%', backgroundColor: 'transparent' }}>
-						<Avatar size={150}  src={props.fetchedUser.photo_200} />
-					</Card>}
-					<Card className='centringCard'
-						style={{width: '30%', backgroundColor: 'transparent' }}>
-						<Avatar size={150}  src={froge} />
-					</Card>
-					<Card className='centringCard'
-						style={{width: '30%', backgroundColor: 'transparent' }}>
-						<Avatar size={150}  src={persik} />
-					</Card>
-					<Card className='centringCard'
-						style={{backgroundColor: 'transparent' }}>
-						<Avatar size={150}  src={student} />
-					</Card>
+						{props.fetchedUser && props.fetchedUser.photo_200 &&
+						<Avatar size={120} className='_margin' src={props.fetchedUser.photo_200} />}
+						<Avatar size={120} className='_margin' src={froge} />
+						<Avatar size={120} className='_margin' src={persik} />
+						<Avatar size={120} className='_margin' src={student} />
 					<Div></Div>
 					<Div></Div>
 					<Div></Div>
@@ -102,9 +86,9 @@ const CourseTeacher = props => {
 			</Group>
 			<Group header={<Header>Задания</Header>}>
 				<CardScroll size='s'>
-					<Card mode="outline" style={{ padding: 10, width: '30%' }} className="centringCard">
-						<div style={{ height: 142 }} >
-							<Icon36Add style={{marginTop: 'auto', marginBottom: 'auto'}} />
+					<Card mode="outline" style={{ padding: 10, width: '30%' }}>
+						<div style={{ height: 142 }} className="centringCard" >
+							<Icon36Add />
 						</div>
 					</Card>
 					<Card mode="outline" style={{ padding: 10, width: '30%' }} className="course-card">
