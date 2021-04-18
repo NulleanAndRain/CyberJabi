@@ -27,7 +27,13 @@
   position: absolute;
   top: 40px;
   right: 30px;
-  float: right;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  max-width: 20%;
 }
 
 .course-score {

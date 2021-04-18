@@ -22,12 +22,12 @@ import {
 	Icon16CommentOutline
 } from '@vkontakte/icons'
 
-const BADGE_LINK = 'https://thumbs.dreamstime.com/b/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-49893413.jpg'
+import bage from '../img/ach/svg/granit.svg';
 const CourseParent = props => {
 	return (
 		<Panel id={props.id}>
 			<PanelHeader
-				left={<PanelHeaderBack onClick={props.go} data-to="studentProfile"/>}
+				left={<PanelHeaderBack onClick={props.go} data-to="parentProfile"/>}
 			>
 				<div className = 'panelHeader'> Математика для новичков </div>
 			</PanelHeader>
@@ -50,7 +50,12 @@ const CourseParent = props => {
 						</Text>
 					</List>
 				</Div>
-				<Avatar className="course-badge" size={72} src={BADGE_LINK} alt="Persik The Cat"/>
+				<div className="course-badge">
+					<Avatar size={72} src={bage} alt="Persik The Cat"/>
+					<Text>
+						Поедатель гранита
+					</Text>
+				</div>
 			</Group>
 			<Group className="course-header-2">
 				<Header>
@@ -83,7 +88,7 @@ const CourseParent = props => {
 							<Text>Тема: Интеграл</Text>
 							<Text>Задание: Изучить параграф 3, решить задания 36, 37, 38</Text>
 							<Text>Баллы за урок: 8</Text>
-							<Avatar className="" size={36} src={BADGE_LINK} alt="Persik The Cat"/>
+							<Avatar className="" size={36} src={bage} alt="Persik The Cat"/>
 							<Button style={{ marginTop: -20, float: 'right'}}>Поделиться</Button>
 						</div>
 					</Card>
