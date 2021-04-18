@@ -51,15 +51,11 @@ const StudentProfile = props => (
 						Математика для новичков
 					</Div>
 					<div className='progressWrapper' id="progress0">
-						{/*<div className='courseProgressBack'>
-							<div className='courseProgressBack'></div>
-						</div>*/}
 						<div className="checkFrog" id='checkFrog0'>
 							<img src={miniFrog1} />
 							<img src={miniFrog2} />
 						</div>
 					</div>
-
 					<div className="weeks" > 4 недели из 10 </div>
 					<div className="scores" > 69 баллов </div>
 				</Card>
@@ -69,9 +65,6 @@ const StudentProfile = props => (
 						Курс по CSS
 					</Div>
 					<div className='progressWrapper' id="progress1">
-						{/*<div className='courseProgressBack'>
-							<div className='courseProgressBack'></div>
-						</div>*/}
 						<div className="checkFrog" id='checkFrog1'>
 							<img src={miniFrog1} />
 							<img src={miniFrog2} />
