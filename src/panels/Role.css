@@ -1,10 +1,7 @@
 .Role {
-    display: flex;
     width: 120px;
     height: 120px;
-    /*background-color: blue;*/
-    justify-content: center;
-    align-items: first;
+    /*transform: translate(0, 10px);*/
 }
 .RoleText{
     width: 100%;

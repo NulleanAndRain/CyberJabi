@@ -23,7 +23,7 @@ import {
 } from '@vkontakte/icons'
 
 const BADGE_LINK = 'https://thumbs.dreamstime.com/b/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-49893413.jpg'
-const CourseStudent = props => {
+const CourseParent = props => {
 	return (
 		<Panel id={props.id}>
 			<PanelHeader
@@ -102,9 +102,9 @@ const CourseStudent = props => {
 	);
 }
 
-CourseStudent.propTypes = {
+CourseParent.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default CourseStudent;
+export default CourseParent;
