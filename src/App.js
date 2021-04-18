@@ -8,8 +8,9 @@ import '@vkontakte/vkui/dist/vkui.css';
 import Home from './panels/Home';
 import CourseStudent from './panels/CourseStudent';
 import Role from './panels/Role';
-import LoadScreen from './panels/LoadScreen'
-import StudentProfile from './panels/StudentProfile'
+import LoadScreen from './panels/LoadScreen';
+import StudentProfile from './panels/StudentProfile';
+import CourseParent from './panels/CourseParent';
 import ParentProfile from "./panels/ParentProfile";
 
 const App = () => {
@@ -42,9 +43,10 @@ const App = () => {
 			<AppRoot>
 				<View activePanel={activePanel} popout={popout}>
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
-					<CourseStudent id='matem' go={go} />
+					<CourseStudent id='studentCourse' go={go} />
 					<Role id='role' go={go} />
 					<StudentProfile id='studentProfile' go={go} fetchedUser={fetchedUser} />
+					<CourseParent id='parentCourse' go={go} />
 					<ParentProfile id='parentProfile' go={go} fetchedUser={fetchedUser} />
 				</View>
 			</AppRoot>

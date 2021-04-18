@@ -45,7 +45,7 @@ const StudentProfile = props => (
 		</Group>
 		<Group>
 			<CardScroll>
-				<Card className="courseCard" onClick={props.go} data-to='matem'>
+				<Card className="courseCard" onClick={props.go} data-to='studentCourse'>
 					<img className='courceImg' id="img0" src={course0} />
 					<Div className='courseName'>
 						Математика для новичков

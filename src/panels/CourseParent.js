@@ -5,13 +5,8 @@ import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
-<<<<<<< HEAD
-import persik from '../img/math.jpg';
-import './CourseStudent.css';
-=======
 import persik from '../img/persik.png';
 import './Course.css';
->>>>>>> home
 import './Common.css';
 import Group from "@vkontakte/vkui/dist/components/Group/Group";
 import Header from "@vkontakte/vkui/dist/components/Header/Header";
@@ -27,12 +22,16 @@ import {
 	Icon16CommentOutline
 } from '@vkontakte/icons'
 
-import bage from '../img/ach/svg/granit.svg';
-const CourseStudent = props => {
+import achGranit from '../img/ach/svg/granit.svg';
+import achSigner from '../img/ach/svg/signer.svg';
+import achArtist from '../img/ach/svg/malevich.svg';
+import achCyber from '../img/ach/svg/cyberjaba.svg';
+
+const CourseParent = props => {
 	return (
 		<Panel id={props.id}>
 			<PanelHeader
-				left={<PanelHeaderBack onClick={props.go} data-to="studentProfile"/>}
+				left={<PanelHeaderBack onClick={props.go} data-to="parentProfile"/>}
 			>
 				<div className = 'panelHeader'> Математика для новичков </div>
 			</PanelHeader>
@@ -56,7 +55,7 @@ const CourseStudent = props => {
 					</List>
 				</Div>
 				<div className="course-badge">
-					<Avatar size={72} src={bage} alt="Persik The Cat"/>
+					<Avatar size={72} src={achGranit} alt="Persik The Cat"/>
 					<Text>
 						Поедатель гранита
 					</Text>
@@ -74,47 +73,65 @@ const CourseStudent = props => {
 				</Div>
 			</Group>
 			<Group className="course-header">
-				<CardGrid>
-					<Card size="l" mode="outline" style={{ padding: 10, width: '30%' }} className="course-card">
-						<div style={{ height: 142 }} >
-							<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
-							<Text>Дата: 1.03.2021</Text>
-							<Text>Время: 11:00</Text>
-							<Text>Тема: Производная</Text>
-							<Text>Задание: Изучить параграф 2, решить задание 24</Text>
-							<Text>Баллы за урок: 10</Text>
-						</div>
+				<CardScroll>
+					<Card className='advancementCard'>
+						<img size={150} src={achCyber} alt="Persik The Cat"/>
+						<Text className='advancementTitle'>
+							Кибержаба
+						</Text>
+						<Text className='advancementDate'>
+							06.06.2077
+						</Text>
+						<Text className='advancementDescr'>
+							Компьютер - твой лучший друг
+						</Text>
 					</Card>
-					<Card size="l" mode="outline" style={{padding: 10, width: '30%'}} className="course-card">
-						<div style={{  height: 126  }} >
-							<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
-							<Text>Дата: 8.03.2021</Text>
-							<Text>Время: 11:00</Text>
-							<Text>Тема: Интеграл</Text>
-							<Text>Задание: Изучить параграф 3, решить задания 36, 37, 38</Text>
-							<Text>Баллы за урок: 8</Text>
-							<Avatar className="" size={36} src={bage} alt="Persik The Cat"/>
-							<Button style={{ marginTop: -20, float: 'right'}}>Поделиться</Button>
-						</div>
+					<Card className='advancementCard'>
+						<img size={150} src={achGranit} alt="Persik The Cat"/>
+						<Text className='advancementTitle'>
+							Поедатель гранита
+						</Text>
+						<Text className='advancementDate'>
+							10.03.2021
+						</Text>
+						<Text className='advancementDescr'>
+							В совершенстве подготовился к уроку
+						</Text>
 					</Card>
-					<Card size="m" mode="outline" style={{padding: 10, width: '30%'}} className="course-card">
-						<div style={{  height: 142 }} >
-							<Text>Дата: 15.03.2021</Text>
-							<Text>Время: 11:00</Text>
-							<Text>Тема: Логарифм</Text>
-							<Text>Задание: Изучить параграф 4, решить задание 42</Text>
-							<Text>Баллы за урок: -</Text>
-						</div>
+					<Card className='advancementCard'>
+						<img size={150} src={achSigner} alt="Persik The Cat"/>
+						<Text className='advancementTitle'>
+							Певец
+						</Text>
+						<Text className='advancementDate'>
+							01.02.2021
+						</Text>
+						<Text className='advancementDescr'>
+							Без запинки и с выражением рассказал стихи
+						</Text>
 					</Card>
-				</CardGrid>
+					<Card className='advancementCard'>
+						<img size={150} src={achArtist} alt="Persik The Cat"/>
+						<Text className='advancementTitle'>
+							Художник
+						</Text>
+						<Text className='advancementDate'>
+							05.12.2020
+						</Text>
+						<Text className='advancementDescr'>
+							Превзошел квадрат Малевича
+						</Text>
+					</Card>
+				</CardScroll>
 			</Group>
+			<Div className='_pad'>.</Div>
 		</Panel>
 	);
 }
 
-CourseStudent.propTypes = {
+CourseParent.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default CourseStudent;
+export default CourseParent;

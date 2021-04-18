@@ -25,13 +25,20 @@ const Role = props => (
 				Кто Вы?
 			</div>
 			<div className="PanelRole">
-				<Card className="CardRole"> <Avatar size="100%"  className="Role" src={teacher} onClick={props.go} data-to="home" alt="role teacher"/>
+				<Card className="CardRole" onClick={props.go} data-to="home">
+					<Avatar size="100%" className="Role" src={teacher} alt="role teacher"/>
 					<div className="RoleText"> Я учитель</div>
 				</Card>
+<<<<<<< HEAD
 				<Card className="CardRole"> <Avatar size="100%" className="Role" src={parent} onClick={props.go} data-to="parentProfile" alt="role parent"/>
+=======
+				<Card className="CardRole" onClick={props.go} data-to="home">
+					<Avatar size="100%" className="Role" src={parent} alt="role parent"/>
+>>>>>>> home
 					<div className="RoleText"> Я родитель </div>
 				</Card>
-				<Card className="CardRole"> <Avatar size="100%" className="Role" src={student} onClick={props.go} data-to="studentProfile" alt="role student"/>
+				<Card className="CardRole" onClick={props.go} data-to="studentProfile">
+					<Avatar size="100%" className="Role" src={student} alt="role student"/>
 					<div className="RoleText"> Я ученик </div>
 				</Card>
 			</div>
