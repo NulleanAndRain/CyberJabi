@@ -32,7 +32,7 @@ import bage from "../img/ach/svg/granit.svg";
 const StudentFromTeacher = props => (
 	<Panel id={props.id}>
 		<PanelHeader
-			left={<PanelHeaderBack onClick={props.go} data-to="role"/>}
+			left={<PanelHeaderBack onClick={props.go} data-to="teacherCourse"/>}
 		> 
 			<div className = 'panelHeader'> Ученик </div>
 		</PanelHeader>

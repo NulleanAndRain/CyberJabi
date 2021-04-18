@@ -33,7 +33,7 @@ const CourseTeacher = props => {
 	return (
 		<Panel id={props.id}>
 			<PanelHeader
-				left={<PanelHeaderBack onClick={props.go} data-to="studentProfile"/>}
+				left={<PanelHeaderBack onClick={props.go} data-to="teacherProfile"/>}
 			>
 				<div className = 'panelHeader'> Математика для новичков </div>
 			</PanelHeader>
@@ -78,10 +78,6 @@ const CourseTeacher = props => {
 						<Avatar size={120} className='_margin' src={froge} />
 						<Avatar size={120} className='_margin' src={persik} />
 						<Avatar size={120} className='_margin' src={student} />
-					<Div></Div>
-					<Div></Div>
-					<Div></Div>
-					<Div></Div>
 				</CardScroll>
 			</Group>
 			<Group header={<Header>Задания</Header>}>
