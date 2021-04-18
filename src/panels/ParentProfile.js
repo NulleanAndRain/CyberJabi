@@ -21,7 +21,6 @@ import course0 from '../img/math.jpg';
 import course1 from '../img/courses/image2.png';
 import course2 from '../img/courses/image3.png';
 import course3 from '../img/courses/3dsMax.png';
-import roadmap from '../img/roadmap.png';
 import miniFrog1 from '../img/icons/checkFrog3.png';
 import miniFrog2 from '../img/icons/checkFrog4.png';
 import diagram from '../img/diagram.png';
@@ -139,9 +138,6 @@ const ParentProfile = props => (
 					<div className="scores" > 478 баллов</div>
 				</Card>
 			</CardScroll>
-		</Group>
-		<Group>
-			<img className='roadmap' src={roadmap} />
 		</Group>
 	</Panel>
 );
