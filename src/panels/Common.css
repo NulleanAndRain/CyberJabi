@@ -1,3 +1,9 @@
 .panelHeader{
 	font-weight: lighter;
 }
+
+.inlineIcon{
+  display: inline-block;
+  padding-right: 0.5em;
+  margin-left: -16px;
+}
