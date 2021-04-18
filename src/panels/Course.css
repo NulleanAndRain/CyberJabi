@@ -10,8 +10,12 @@
   position: relative;
   height: 200px;
   margin: 10px;
-}
 
+}
+.course-header{
+  display: flex;
+  flex-direction: row;
+}
 .course-header-2 .Group__inner {
   position: relative;
   height: 120px;
@@ -64,4 +68,7 @@
 }
 .advancementDescr{
   font-size: .9em;
+}
+.course-card{
+  min-height: 160px;
 }

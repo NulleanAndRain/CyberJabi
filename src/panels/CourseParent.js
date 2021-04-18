@@ -125,8 +125,8 @@ const CourseParent = props => {
 				</CardScroll>
 			</Group>
 			<Group className="course-header">
-				<CardGrid>
-					<Card size="l" mode="outline" style={{ padding: 10, width: '30%' }} className="course-card">
+				<CardGrid >
+					<Card size="l" mode="outline" style={{ padding: 10, width: '28%' }} className="course-card">
 						<div style={{ height: 142 }} >
 							<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
 							<Text>Дата: 1.03.2021</Text>
@@ -136,7 +136,7 @@ const CourseParent = props => {
 							<Text>Баллы за урок: 10</Text>
 						</div>
 					</Card>
-					<Card size="l" mode="outline" style={{padding: 10, width: '30%'}} className="course-card">
+					<Card size="l" mode="outline" style={{padding: 10, width: '28%'}} className="course-card">
 						<div style={{  height: 126  }} >
 							<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
 							<Text>Дата: 8.03.2021</Text>
@@ -148,7 +148,7 @@ const CourseParent = props => {
 							<Button style={{ marginTop: -20, float: 'right'}}>Поделиться</Button>
 						</div>
 					</Card>
-					<Card size="m" mode="outline" style={{padding: 10, width: '30%'}} className="course-card">
+					<Card size="m" mode="outline" style={{padding: 10, width: '28%'}} className="course-card">
 						<div style={{  height: 142 }} >
 							<Text>Дата: 15.03.2021</Text>
 							<Text>Время: 11:00</Text>

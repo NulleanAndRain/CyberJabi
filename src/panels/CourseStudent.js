@@ -69,8 +69,8 @@ const CourseStudent = props => {
 				</Div>
 			</Group>
 			<Group className="course-header">
-				<CardGrid>
-					<Card size="l" mode="outline" style={{ padding: 10, width: '30%' }} className="course-card">
+				<CardGrid className='tasks'>
+					<Card size="l" mode="outline" style={{ padding: 10, width: '28%' }} className="course-card">
 						<div style={{ height: 142 }} >
 							<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
 							<Text>Дата: 1.03.2021</Text>
@@ -80,7 +80,7 @@ const CourseStudent = props => {
 							<Text>Баллы за урок: 10</Text>
 						</div>
 					</Card>
-					<Card size="l" mode="outline" style={{padding: 10, width: '30%'}} className="course-card">
+					<Card size="l" mode="outline" style={{padding: 10, width: '28%'}} className="course-card">
 						<div style={{  height: 126  }} >
 							<Button style={{ marginTop: 10, float: 'right', opacity: 0.8}} mode="commerce" disabled >Сдано</Button>
 							<Text>Дата: 8.03.2021</Text>
@@ -92,7 +92,7 @@ const CourseStudent = props => {
 							<Button style={{ marginTop: -20, float: 'right'}}>Поделиться</Button>
 						</div>
 					</Card>
-					<Card size="m" mode="outline" style={{padding: 10, width: '30%'}} className="course-card">
+					<Card size="m" mode="outline" style={{padding: 10, width: '28%'}} className="course-card">
 						<div style={{  height: 142 }} >
 							<Text>Дата: 15.03.2021</Text>
 							<Text>Время: 11:00</Text>
