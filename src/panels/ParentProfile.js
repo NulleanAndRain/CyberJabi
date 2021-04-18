@@ -17,6 +17,7 @@ import './StudentProfile.css';
 import './ParentProfile.css';
 import './Common.css';
 import froge from '../img/groups/frog.png';
+import course0 from '../img/math.jpg';
 import course1 from '../img/courses/image2.png';
 import course2 from '../img/courses/image3.png';
 import course3 from '../img/courses/3dsMax.png';
@@ -80,15 +81,26 @@ const ParentProfile = props => (
 		</Group>
 		<Group>
 			<CardScroll>
+				<Card className="courseCard" onClick={props.go} data-to='parentCourse'>
+					<img className='courceImg' id="img0" src={course0} />
+					<Div className='courseName'>
+						Математика для новичков
+					</Div>
+					<div className='progressWrapper' id="progress0">
+						<div className="checkFrog" id='checkFrog0'>
+							<img src={miniFrog1} />
+							<img src={miniFrog2} />
+						</div>
+					</div>
+					<div className="weeks" > 4 недели из 10 </div>
+					<div className="scores" > 69 баллов </div>
+				</Card>
 				<Card className="courseCard">
 					<img className='courceImg' id="img1" src={course1} />
 					<Div className='courseName'>
 						Курс по CSS
 					</Div>
 					<div className='progressWrapper' id="progress1">
-						{/*<div className='courseProgressBack'>
-							<div className='courseProgressBack'></div>
-						</div>*/}
 						<div className="checkFrog" id='checkFrog1'>
 							<img src={miniFrog1} />
 							<img src={miniFrog2} />

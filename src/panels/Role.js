@@ -16,7 +16,7 @@ import student from '../img/groups/student.png';
 import logo from '../img/logo.png';
 import './Role.css';
 import './Common.css';
-import ParentProfile from "./ParentProfile";
+
 const Role = props => (
 	<Panel id={props.id}>
 		<div className='panelBox'>
@@ -29,12 +29,8 @@ const Role = props => (
 					<Avatar size="100%" className="Role" src={teacher} alt="role teacher"/>
 					<div className="RoleText"> Я учитель</div>
 				</Card>
-<<<<<<< HEAD
-				<Card className="CardRole"> <Avatar size="100%" className="Role" src={parent} onClick={props.go} data-to="parentProfile" alt="role parent"/>
-=======
-				<Card className="CardRole" onClick={props.go} data-to="home">
+				<Card className="CardRole" onClick={props.go} data-to="parentProfile">
 					<Avatar size="100%" className="Role" src={parent} alt="role parent"/>
->>>>>>> home
 					<div className="RoleText"> Я родитель </div>
 				</Card>
 				<Card className="CardRole" onClick={props.go} data-to="studentProfile">

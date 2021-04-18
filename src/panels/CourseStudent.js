@@ -5,13 +5,8 @@ import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
-<<<<<<< HEAD
 import persik from '../img/math.jpg';
-import './CourseStudent.css';
-=======
-import persik from '../img/persik.png';
 import './Course.css';
->>>>>>> home
 import './Common.css';
 import Group from "@vkontakte/vkui/dist/components/Group/Group";
 import Header from "@vkontakte/vkui/dist/components/Header/Header";
